@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"776537fef7b3aa9b","type":"file","file":"tale-of-sunshiny-ages/wiki/Параметры Человечества.md","x":1420,"y":370,"width":400,"height":460,"color":"5"},
+		{"id":"d293fc2222a14011","type":"text","text":"# Жизненные Пути","x":-640,"y":40,"width":400,"height":80,"color":"1"},
+		{"id":"c42e10ed2fe3f390","type":"file","file":"tale-of-sunshiny-ages/wiki/Параметры Вершителей Судьбы.md","x":-640,"y":390,"width":400,"height":420,"color":"1"},
+		{"id":"850b1f8b635cacc6","type":"file","file":"tale-of-sunshiny-ages/wiki/Страницы истории.md","x":585,"y":400,"width":400,"height":400,"color":"4"},
+		{"id":"fdeafaccf86147e8","type":"text","text":"# Очки действия","x":608,"y":-120,"width":355,"height":100,"color":"3"},
+		{"id":"40fade703c3d35a2","type":"file","file":"tale-of-sunshiny-ages/wiki/Задания.md","x":586,"y":-616,"width":400,"height":400,"color":"2"},
+		{"id":"992baba77797364c","type":"text","text":"# Ветки развития","x":1430,"y":56,"width":380,"height":100,"color":"5"},
+		{"id":"a0953e40589a8e44","type":"file","file":"tale-of-sunshiny-ages/wiki/Финал.md","x":586,"y":920,"width":400,"height":400},
+		{"id":"cc17054211bb8ae9","type":"file","file":"tale-of-sunshiny-ages/wiki/Ранг влияния.md","x":1180,"y":-494,"width":400,"height":156,"color":"2"},
+		{"id":"5d5fbf2cfda7c4ff","type":"file","file":"tale-of-sunshiny-ages/wiki/Благословения.md","x":-60,"y":-80,"width":400,"height":400,"color":"6"}
+	],
+	"edges":[
+		{"id":"0e40e9d17639ef05","fromNode":"850b1f8b635cacc6","fromSide":"right","toNode":"776537fef7b3aa9b","toSide":"left","label":"изменяют"},
+		{"id":"f37a0326a64a8adc","fromNode":"992baba77797364c","fromSide":"left","toNode":"5d5fbf2cfda7c4ff","toSide":"right","label":"дают при повышении уровня"},
+		{"id":"533d5bd80bb38c32","fromNode":"40fade703c3d35a2","fromSide":"left","toNode":"5d5fbf2cfda7c4ff","toSide":"right","label":"дают"},
+		{"id":"c60c7711813a8361","fromNode":"850b1f8b635cacc6","fromSide":"left","toNode":"5d5fbf2cfda7c4ff","toSide":"right","label":"дают \n(некоторые)"},
+		{"id":"9c1b9e5c675ea0ae","fromNode":"c42e10ed2fe3f390","fromSide":"right","toNode":"850b1f8b635cacc6","toSide":"left","label":"усиливают положительный эффект"},
+		{"id":"157f32723c66e302","fromNode":"776537fef7b3aa9b","fromSide":"top","toNode":"992baba77797364c","toSide":"bottom","label":"при улучшении дают доступ к"},
+		{"id":"a878fe9648d8439c","fromNode":"5d5fbf2cfda7c4ff","fromSide":"bottom","toNode":"c42e10ed2fe3f390","toSide":"top","label":"усиливают"},
+		{"id":"84ae93560c308915","fromNode":"776537fef7b3aa9b","fromSide":"bottom","toNode":"a0953e40589a8e44","toSide":"right","label":"усиливают богиню в"},
+		{"id":"a2de3f95f5c90b37","fromNode":"c42e10ed2fe3f390","fromSide":"right","toNode":"a0953e40589a8e44","toSide":"left","label":"определяют боеспособность игроков в"},
+		{"id":"28a5843845fa603e","fromNode":"d293fc2222a14011","fromSide":"bottom","toNode":"c42e10ed2fe3f390","toSide":"top","label":"отвечают за\nбазовое распределение"},
+		{"id":"3741fb6bbb6fc7dd","fromNode":"fdeafaccf86147e8","fromSide":"left","toNode":"5d5fbf2cfda7c4ff","toSide":"right","label":"позволяют взять за 1\n(не более раза за 3 хода)"},
+		{"id":"1e8489f7c71bbf21","fromNode":"fdeafaccf86147e8","fromSide":"top","toNode":"40fade703c3d35a2","toSide":"bottom","label":"позволяют взять за 2"},
+		{"id":"539454343e1dda51","fromNode":"fdeafaccf86147e8","fromSide":"bottom","toNode":"850b1f8b635cacc6","toSide":"top","label":"позволяют\nоткрыть за 3"},
+		{"id":"feece17e91c97ab1","fromNode":"fdeafaccf86147e8","fromSide":"right","toNode":"992baba77797364c","toSide":"top","label":"позволяют повысить уровень за 1"},
+		{"id":"307f724085c50014","fromNode":"992baba77797364c","fromSide":"left","toNode":"850b1f8b635cacc6","toSide":"top","label":"дают доступ \nк уникальным"},
+		{"id":"bb4b4f7149bb24e2","fromNode":"40fade703c3d35a2","fromSide":"right","toNode":"cc17054211bb8ae9","toSide":"left","label":"повышают"},
+		{"id":"d39a4de590fe2488","fromNode":"cc17054211bb8ae9","fromSide":"bottom","toNode":"850b1f8b635cacc6","toSide":"top","label":"усиливает положительный эффект"},
+		{"id":"c7fdffdd9afd664c","fromNode":"cc17054211bb8ae9","fromSide":"bottom","toNode":"776537fef7b3aa9b","toSide":"left","label":"увеличивает\nдополнительно"}
+	]
+}
