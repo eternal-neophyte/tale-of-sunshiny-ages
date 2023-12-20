@@ -1,1 +1,3 @@
-# tale-of-sunshiny-ages
+# Повесть Озаренных Веков
+
+ЛитРПГ для Telegram с элементами Rogue-like игр
