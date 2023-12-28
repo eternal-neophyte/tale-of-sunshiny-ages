@@ -1,17 +1,18 @@
 {
 	"nodes":[
-		{"type":"text","text":"Случайный выбор роли - Жизненного Пути для каждого игрока","id":"1ced2e0b26e574f7","x":-243,"y":360,"width":416,"height":61,"color":"6"},
-		{"type":"file","file":"tale-of-sunshiny-ages/wiki/Параметры Вершителей Судьбы.md","id":"7ae9b34bedad66c7","x":-220,"y":640,"width":400,"height":400},
-		{"type":"text","text":"Новая игра","id":"e308114944d399e8","x":-290,"y":198,"width":250,"height":60,"color":"5"},
-		{"type":"text","text":"Правила игры","id":"f15718a345a28b59","x":-20,"y":198,"width":250,"height":60,"color":"5"},
-		{"type":"text","text":"Легенда\nКнопки выделены голубым цветом\nЭлементы внутриигровой логики выделены фиол.","id":"8c165b0d5437a5dd","x":540,"y":-140,"width":250,"height":260},
+		{"type":"text","text":"Новая игра","id":"e308114944d399e8","x":-290,"y":198,"width":250,"height":60,"color":"3"},
+		{"type":"text","text":"Правила игры","id":"f15718a345a28b59","x":-20,"y":198,"width":250,"height":60,"color":"3"},
+		{"type":"text","text":"Легенда\nКнопки выделены оранжевым цветом\nЭлементы внутриигровой логики выделены фиол.","id":"8c165b0d5437a5dd","x":540,"y":-140,"width":250,"height":260},
 		{"type":"file","file":"tale-of-sunshiny-ages/wiki/Вступление.md","id":"593b84c46b74f619","x":-290,"y":-360,"width":520,"height":480},
-		{"id":"5044c4dbc4bc2bfc","type":"file","file":"tale-of-sunshiny-ages/wiki/Правила игры.md","x":340,"y":360,"width":400,"height":440}
+		{"id":"5044c4dbc4bc2bfc","type":"file","file":"tale-of-sunshiny-ages/wiki/Правила игры.md","x":340,"y":360,"width":400,"height":440},
+		{"type":"text","text":"Случайный выбор роли - Жизненного Пути для каждого игрока","id":"1ced2e0b26e574f7","x":-373,"y":360,"width":416,"height":61,"color":"6"},
+		{"type":"file","file":"tale-of-sunshiny-ages/wiki/Параметры Вершителей Судьбы.md","id":"7ae9b34bedad66c7","x":-900,"y":191,"width":400,"height":400}
 	],
 	"edges":[
-		{"id":"9685d177b4b39eba","fromNode":"1ced2e0b26e574f7","fromSide":"bottom","toNode":"7ae9b34bedad66c7","toSide":"top"},
 		{"id":"d2a7bfe8b9d03fda","fromNode":"593b84c46b74f619","fromSide":"bottom","toNode":"e308114944d399e8","toSide":"top"},
 		{"id":"ccf7959cfd5dd5d7","fromNode":"593b84c46b74f619","fromSide":"bottom","toNode":"f15718a345a28b59","toSide":"top"},
-		{"id":"1a858ff9914cbb5d","fromNode":"f15718a345a28b59","fromSide":"bottom","toNode":"5044c4dbc4bc2bfc","toSide":"top"}
+		{"id":"1a858ff9914cbb5d","fromNode":"f15718a345a28b59","fromSide":"bottom","toNode":"5044c4dbc4bc2bfc","toSide":"top"},
+		{"id":"df65896c09565955","fromNode":"e308114944d399e8","fromSide":"bottom","toNode":"1ced2e0b26e574f7","toSide":"top"},
+		{"id":"5de1d97993149e88","fromNode":"1ced2e0b26e574f7","fromSide":"left","toNode":"7ae9b34bedad66c7","toSide":"right"}
 	]
 }
