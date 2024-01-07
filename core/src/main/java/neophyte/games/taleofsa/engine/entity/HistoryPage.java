@@ -1,7 +1,7 @@
 package neophyte.games.taleofsa.engine.entity;
 
-import neophyte.games.taleofsa.engine.common.GameStateConsumer;
-import neophyte.games.taleofsa.engine.common.GameStatePredicate;
+import neophyte.games.taleofsa.engine.common.GameContextConsumer;
+import neophyte.games.taleofsa.engine.common.GameContextPredicate;
 
 public class HistoryPage {
 
@@ -9,9 +9,9 @@ public class HistoryPage {
     private String text;
     private Type type;
     private boolean canRepeat;
-    private GameStateConsumer consequencesForHumankind;
-    private GameStateConsumer consequencesForServants;
-    private GameStatePredicate appearanceConstraint;
+    private GameContextConsumer consequencesForHumankind;
+    private GameContextConsumer consequencesForServants;
+    private GameContextPredicate appearanceConstraint;
 
     public enum Type {
         POSITIVE,

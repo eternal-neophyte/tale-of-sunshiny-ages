@@ -21,29 +21,20 @@ public enum Font implements AssetEnum {
             "абвгдеёжзийклмнопрстуфхцчшщъыьэюя" +
             "0123456789 -+=\\/.,:;()*%!?\0";
 
-    private final String fontPath;
-
-    Font() {
-        fontPath = String.format("font/%s.ttf", assetName());
-    }
-
-    Font(String fontPath) {
-        this.fontPath = fontPath;
-    }
-
-    public BitmapFont toBitmapFont(int size) {
+    public BitmapFont bitmapFont(int size) {
         var parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = size;
-        return toBitmapFont(parameter);
+        return bitmapFont(parameter);
     }
 
-    public BitmapFont toBitmapFont(FreeTypeFontGenerator.FreeTypeFontParameter parameter) {
+    public BitmapFont bitmapFont(FreeTypeFontGenerator.FreeTypeFontParameter parameter) {
         parameter.characters = SUPPORTED_CHARACTERS;
         parameter.mono = false;
         parameter.genMipMaps = true;
         parameter.minFilter = Texture.TextureFilter.MipMapLinearLinear;
         parameter.magFilter = Texture.TextureFilter.Linear;
 
+        String fontPath = String.format("font/%s.ttf", assetName());
         var generator = new FreeTypeFontGenerator(Gdx.files.internal(fontPath));
 
         var font = generator.generateFont(parameter);
