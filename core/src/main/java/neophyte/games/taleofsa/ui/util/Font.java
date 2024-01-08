@@ -1,9 +1,10 @@
+/*
 package neophyte.games.taleofsa.ui.util;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
+import neophyte.games.taleofsa.freetype.FreeTypeFontGenerator;
 
 public enum Font implements AssetEnum {
 
@@ -34,7 +35,7 @@ public enum Font implements AssetEnum {
         parameter.minFilter = Texture.TextureFilter.MipMapLinearLinear;
         parameter.magFilter = Texture.TextureFilter.Linear;
 
-        String fontPath = String.format("font/%s.ttf", assetName());
+        String fontPath = "font/" + assetName() + ".ttf";
         var generator = new FreeTypeFontGenerator(Gdx.files.internal(fontPath));
 
         var font = generator.generateFont(parameter);
@@ -43,3 +44,4 @@ public enum Font implements AssetEnum {
         return font;
     }
 }
+*/

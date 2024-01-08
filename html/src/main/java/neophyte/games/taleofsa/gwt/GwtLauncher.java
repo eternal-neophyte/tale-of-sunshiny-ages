@@ -3,7 +3,7 @@ package neophyte.games.taleofsa.gwt;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import neophyte.games.taleofsa.Game;
+import neophyte.games.taleofsa.TsaGame;
 
 /** Launches the GWT application. */
 public class GwtLauncher extends GwtApplication {
@@ -21,6 +21,6 @@ public class GwtLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener createApplicationListener () {
-            return new Game();
+            return new TsaGame();
         }
 }

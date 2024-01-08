@@ -22,7 +22,7 @@ public class CommonScreen extends ScreenAdapter {
         viewport = new FillViewport(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         stage = new Stage(viewport);
         Gdx.input.setInputProcessor(stage);
-        for (var actor :actors) {
+        for (var actor : actors) {
             stage.addActor(actor);
         }
     }

@@ -1,5 +1,6 @@
 package neophyte.games.taleofsa.ui.component.builder;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -12,10 +13,10 @@ public class VerticalScrollPaneBuilder {
     private final VerticalGroup group = new VerticalGroup();
     private Skin skin;
     private boolean isVisible = false;
-    private int x;
-    private int y;
-    private int width;
-    private int height;
+    private int x = 0;
+    private int y = 0;
+    private int width = Gdx.graphics.getWidth();
+    private int height = Gdx.graphics.getHeight();
 
     public VerticalScrollPaneBuilder skin(Skin skin) {
         this.skin = skin;
@@ -70,6 +71,8 @@ public class VerticalScrollPaneBuilder {
         scrollPane.setPosition(x, y);
         scrollPane.setSize(width, height);
         scrollPane.setVisible(isVisible);
+        //ToDo builder
+        scrollPane.setScale(0.6f);
         return scrollPane;
     }
 }

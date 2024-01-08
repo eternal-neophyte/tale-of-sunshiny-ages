@@ -6,7 +6,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
 public enum UiComponent implements AssetEnum {
 
-
+    MOVE_ACTION_BUTTONS
     ;
 
     private TextureAtlas atlas;
@@ -14,7 +14,7 @@ public enum UiComponent implements AssetEnum {
 
     public TextureAtlas atlas() {
         if (atlas == null) {
-            String atlasPath = String.format("texture/%s.atlas", assetName());
+            String atlasPath = "texture/" + assetName() + ".atlas";
             atlas = new TextureAtlas(Gdx.files.internal(atlasPath));
         }
         return atlas;
@@ -22,7 +22,7 @@ public enum UiComponent implements AssetEnum {
 
     public Skin skin() {
         if (skin == null) {
-            String stylePath = String.format("style/%s.json", assetName());
+            String stylePath = "style/" + assetName() + ".json";
             skin = new Skin(Gdx.files.internal(stylePath), atlas());
         }
         return skin;

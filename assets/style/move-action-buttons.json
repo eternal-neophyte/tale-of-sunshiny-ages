@@ -1,0 +1,95 @@
+{
+  BitmapFont: {
+    default: {
+      file: gputeks-bold-hiero.fnt
+    }
+    gputeksBold: {
+      file: gputeks-bold-hiero.fnt,
+    }
+  },
+
+  Color: {
+    steelShadow: { hex: #5F5F70 },
+    steel: { hex: #7D7D95 },
+  },
+
+  LabelStyle: {
+    default: {
+      font: gputeksBold,
+      fontColor: steelShadow
+    }
+  }
+
+  TextButtonStyle: {
+    blessing-button: {
+      up:   blessing-button-up
+      down: blessing-button-down,
+      over: blessing-button-over
+      font: gputeksBold,
+      fontColor: steelShadow,
+      checkedFontColor: steel
+    },
+    dev-tree-button: {
+      up:   dev-tree-button-up
+      down: dev-tree-button-down,
+      over: dev-tree-button-over
+      font: gputeksBold,
+      fontColor: steelShadow,
+      checkedFontColor: steel
+    },
+    framed-button: {
+      up:   framed-button-up
+      down: framed-button-down,
+      over: framed-button-over
+      font: gputeksBold,
+      fontColor: steelShadow,
+      checkedFontColor: steel
+    },
+    history-page-button: {
+      up:   history-page-button-up
+      down: history-page-button-down,
+      over: history-page-button-over
+      font: gputeksBold,
+      fontColor: steelShadow,
+      checkedFontColor: steel
+    },
+    mission-button: {
+      up:   mission-button-up
+      down: mission-button-down,
+      over: mission-button-over
+      font: gputeksBold,
+      fontColor: steelShadow,
+      checkedFontColor: steel
+    },
+    move-done-button: {
+      up:   move-done-button-up
+      down: move-done-button-down,
+      over: move-done-button-over
+      font: gputeksBold,
+      fontColor: steelShadow,
+      checkedFontColor: steel
+    },
+    plain-button: {
+      up:   plain-button-up
+      down: plain-button-down,
+      over: plain-button-over
+      font: gputeksBold,
+      fontColor: steelShadow,
+      checkedFontColor: steel
+    },
+    settings-button: {
+      up:   settings-button-up
+      down: settings-button-down,
+      over: settings-button-over
+      font: gputeksBold,
+      fontColor: steelShadow,
+      checkedFontColor: steel
+    },
+  },
+
+  ScrollPaneStyle: {
+    default: {
+
+    }
+  }
+}
