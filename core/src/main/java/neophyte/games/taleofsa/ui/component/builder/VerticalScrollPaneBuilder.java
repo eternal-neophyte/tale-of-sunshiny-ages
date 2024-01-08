@@ -6,6 +6,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.VerticalGroup;
 
+import java.util.Collection;
 import java.util.Objects;
 
 public class VerticalScrollPaneBuilder {
@@ -55,6 +56,11 @@ public class VerticalScrollPaneBuilder {
 
     public VerticalScrollPaneBuilder padTop(float padTop) {
         group.padTop(padTop);
+        return this;
+    }
+
+    public VerticalScrollPaneBuilder actors(Collection<? extends Actor> actors) {
+        actors.forEach(group::addActor);
         return this;
     }
 

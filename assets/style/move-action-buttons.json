@@ -23,7 +23,6 @@
   TextButtonStyle: {
     blessing-button: {
       up:   blessing-button-up
-      down: blessing-button-down,
       over: blessing-button-over
       font: gputeksBold,
       fontColor: steelShadow,
@@ -31,7 +30,6 @@
     },
     dev-tree-button: {
       up:   dev-tree-button-up
-      down: dev-tree-button-down,
       over: dev-tree-button-over
       font: gputeksBold,
       fontColor: steelShadow,
@@ -39,7 +37,6 @@
     },
     framed-button: {
       up:   framed-button-up
-      down: framed-button-down,
       over: framed-button-over
       font: gputeksBold,
       fontColor: steelShadow,
@@ -47,7 +44,6 @@
     },
     history-page-button: {
       up:   history-page-button-up
-      down: history-page-button-down,
       over: history-page-button-over
       font: gputeksBold,
       fontColor: steelShadow,
@@ -55,7 +51,6 @@
     },
     mission-button: {
       up:   mission-button-up
-      down: mission-button-down,
       over: mission-button-over
       font: gputeksBold,
       fontColor: steelShadow,
@@ -63,7 +58,6 @@
     },
     move-done-button: {
       up:   move-done-button-up
-      down: move-done-button-down,
       over: move-done-button-over
       font: gputeksBold,
       fontColor: steelShadow,
@@ -71,7 +65,6 @@
     },
     plain-button: {
       up:   plain-button-up
-      down: plain-button-down,
       over: plain-button-over
       font: gputeksBold,
       fontColor: steelShadow,
@@ -79,7 +72,6 @@
     },
     settings-button: {
       up:   settings-button-up
-      down: settings-button-down,
       over: settings-button-over
       font: gputeksBold,
       fontColor: steelShadow,

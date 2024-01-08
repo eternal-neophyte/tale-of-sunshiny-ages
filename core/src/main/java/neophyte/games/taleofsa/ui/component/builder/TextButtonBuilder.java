@@ -1,23 +1,20 @@
 package neophyte.games.taleofsa.ui.component.builder;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.EventListener;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TextButtonBuilder {
 
-    private String text;
     private Skin skin;
     private String style;
-    private BitmapFont font;
-    private String fontColor;
+    private String text;
+    private float scale = 1.0f;
+    private final List<EventListener> listeners = new ArrayList<>();
 
-    public TextButtonBuilder text(String text) {
-        this.text = text;
-        return this;
-    }
 
     public TextButtonBuilder skin(Skin skin) {
         this.skin = skin;
@@ -29,21 +26,25 @@ public class TextButtonBuilder {
         return this;
     }
 
-    public TextButtonBuilder font(BitmapFont font) {
-        this.font = font;
+    public TextButtonBuilder text(String text) {
+        this.text = text;
         return this;
     }
 
-    public TextButtonBuilder fontColor(String fontColor) {
-        this.fontColor = fontColor;
+    public TextButtonBuilder scale(float scale) {
+        this.scale = scale;
+        return this;
+    }
+
+    public TextButtonBuilder listeners(EventListener listener) {
+        listeners.add(listener);
         return this;
     }
 
     public TextButton build() {
-        Label.LabelStyle s = new Label.LabelStyle(font, Color.valueOf(fontColor));
-        var label = new Label(text, s);
-        var b = new TextButton(text, skin, style);
-        b.setLabel(label);
-        return b;
+        var button = new TextButton(text, skin, style);
+        button.setScale(scale);
+        listeners.forEach(button::addListener);
+        return button;
     }
 }
